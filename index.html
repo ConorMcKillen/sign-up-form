@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link refl="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-container">
+        <div class="title-container"><img src="odin-lined.png" /></div>
+      </div>
+      <div class="right-container">
+        <div class="text-section">
+          <p class="main-text">
+            This is not a real online service! You know you need something like
+            this in your life to help you realise your deepest dreams.<br />
+            Sign up <em>now</em> to get started.
+          </p>
+          <p class="secondary-text">You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="form-section">
+          <h2 class="sub-heading">Let's do this!</h2>
+          <div id="user-info">
+            <div class="form-el">
+              <label for="first_name">FIRST NAME</label>
+              <input type="text" id="first_name" name="first_name" />
+
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" />
+              <label for="password">PASSWORD</label>
+              <input
+                type="password"
+                pattern="hello"
+                id="password"
+                name="password"
+              />
+              <span class="error-message">Password is wrong</span>
+            </div>
+            <div class="form-el">
+              <label for="last_name">LAST NAME</label>
+              <input type="text" id="last_name" name="last_name" />
+              <label for="phone">TELEPHONE</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{4}"
+              />
+              <label for="password">CONFIRM PASSWORD</label>
+              <input type="password" id="password" name="password" />
+            </div>
+          </div>
+        </div>
+
+        <div class="cta">
+          <button type="submit" form="user-info">Create Account</button>
+          <span>Already have an account? <strong>Log in</strong></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
